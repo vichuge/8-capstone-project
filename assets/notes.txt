@@ -1,0 +1,60 @@
+Parts or the page---------------
+    Main page--
+        nav bar
+        search
+        instructions
+        footer
+    Search results page--
+        navbar
+        filters
+        results
+        footer
+    Details for house page
+        navbar
+        picture | info
+        footer
+
+
+Sizes-----------------------------
+/* tablet: up to 1024px */
+@media (max-width: 1024px) {}
+/* mobile: up to 768px */
+@media (max-width: 768px) {}
+
+Palette colors---------------------
+#d35649
+#98a4a5
+#509bd7
+black
+white
+#1f1f1f
+#444
+
+Fonts------------------------------
+font-family: 'Castoro', serif;
+font-family: 'Noto Sans', sans-serif;
+
+Icons---------------------------------
+<i class="fas fa-search"></i>
+<i class="fas fa-user"></i>
+<i class="far fa-user"></i>
+<i class="fas fa-wifi"></i>
+<i class="fas fa-bars"></i>
+<i class="fas fa-edit"></i>
+<i class="fas fa-user-graduate"></i>
+<i class="fas fa-graduation-cap"></i>
+<i class="fas fa-newspaper"></i>
+<i class="far fa-newspaper"></i>
+<i class="fas fa-file-alt"></i>
+<i class="far fa-file-alt"></i>
+<i class="fas fa-rss-square"></i>
+<i class="fas fa-map-marker-alt"></i>
+<i class="fas fa-map-marker"></i>
+<i class="fas fa-map-marker"></i>
+<i class="fas fa-globe-americas"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-file-alt"></i>
+<i class="far fa-file-alt"></i>
+<i class="fas fa-couch"></i>
+<i class="fas fa-umbrella-beach"></i>
+<i class="fas fa-home"></i>
