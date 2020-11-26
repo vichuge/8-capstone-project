@@ -42,4 +42,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/vichuge/8-capstone-project/blob/main/LICENSE) licensed.
+This project is [Creative Commons Legal Code](https://github.com/vichuge/8-capstone-project/blob/main/LICENSE) licensed.
