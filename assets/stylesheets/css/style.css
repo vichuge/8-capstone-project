@@ -1,0 +1,35 @@
+/* Colors */
+/* Fonts */
+/* mobile: up to 768px (tablets) */
+/* tablet: up to 1024px (computers) */
+.no, .row {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important; }
+
+.bg-magenta {
+  background-color: #d35649; }
+
+.font-size-mid {
+  font-size: 14px; }
+
+h2 {
+  font-size: 15px;
+  color: #d35649; }
+
+body {
+  font-family: "Noto Sans", sans-serif; }
+  body nav a {
+    color: white;
+    font-size: 18px; }
+    body nav a:hover {
+      color: white; }
+  body nav ul {
+    list-style-type: none; }
+  body .sec-1 {
+    background-image: url("../../img/bg-page.jpg"); }
+    body .sec-1 .main-form {
+      background-color: rgba(255, 255, 255, 0.9); }
+
+/*# sourceMappingURL=style.css.map */
