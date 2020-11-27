@@ -4,10 +4,12 @@
 
 body {
   font-family: $noto-sans;
+
   nav {
     a {
       color: $white;
       font-size: 22px;
+
       &:hover {
         color: $white;
       }
