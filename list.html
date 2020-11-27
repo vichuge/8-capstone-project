@@ -82,131 +82,146 @@
         </ul>
       </div>
     </nav>
-    <section class="row sec-1-index py-5">
-      <div class="col-12 px-0">
-        <p
-          class="text-center text-white font-weight-bold text-uppercase font-size-mid title-form"
-        >
-          The best place to find your sweet home
-        </p>
-      </div>
-      <div class="col-12 px-2 col-main-form">
-        <form action="#" class="row rounded mx-0 p-2 border main-form">
-          <div class="col-12 px-2">
-            <label
-              class="text-dark font-weight-bold text-uppercase font-size-mid"
-              >Search by key word:</label
-            >
-          </div>
-          <div class="col-12 col-md-8 px-2 pr-md-0">
-            <input type="text" class="form-control form-control-sm" />
-          </div>
-          <div class="col-12 col-md-4 px-2 mt-2 mt-md-0 pl-md-0">
-            <button
-              type="submit"
-              class="btn bg-magenta text-white btn-block btn-sm"
-            >
-              Search
-            </button>
-          </div>
-        </form>
-      </div>
+    <div class="row sec-1-list no mt-5 py-5">
       <div class="col-12">
-        <button type="button" class="btn"></button>
-      </div>
-    </section>
-    <section class="row sec-2 justify-content-center text-center py-4">
-      <div class="col-12 mb-2">
-        <h2 class="font-weight-bold h2-steps">
-          Home sweet home works in four simple steps
-        </h2>
-      </div>
-      <!-- this 4 times -->
-      <div class="col-12 col-md-6 my-2 my-md-5">
-        <div class="row mb-2">
-          <div class="col-12">
-            <i class="fas fa-search fa-2x"></i>
-          </div>
-        </div>
-        <div class="row mb-2">
-          <div class="col-12">
-            <h3 class="font-weight-bold">1- Search:</h3>
-          </div>
-        </div>
         <div class="row">
-          <div class="col-12 p-square">
-            <p class="font-size-mid">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud".
-            </p>
+          <div class="col-12 font-weight-bold text-gray-light">
+            <p class="text-center filter-by">Filter by:</p>
           </div>
+        </div>
+        <div class="row justify-content-center">
+          <form action="#">
+            <div class="row">
+              <div class="col-12 col-md-auto form-group pr-0 pl-1">
+                <label
+                  class="text-gray-dark font-weight-bold text-uppercase"
+                  for=""
+                  >Colony:*</label
+                >
+                <input type="text" class="form-control" placeholder="" />
+              </div>
+              <div class="col-12 col-md-auto form-group pr-0 pl-1">
+                <label class="text-gray-dark font-weight-bold text-uppercase"
+                  >State</label
+                >
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option value="0"></option>
+                  <option>Yucatán</option>
+                  <option>Quintana Roo</option>
+                  <option>Veracruz</option>
+                  <option>Guadalajara</option>
+                  <option>Monterrey</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-auto form-group pr-0 pl-1">
+                <label class="text-gray-dark font-weight-bold text-uppercase"
+                  >City</label
+                >
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option value="0"></option>
+                  <option>Cancun</option>
+                  <option>Jaliso</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-auto form-group pr-0 pl-1">
+                <label class="text-gray-dark font-weight-bold text-uppercase"
+                  >Type</label
+                >
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option value="0"></option>
+                  <option>One roof</option>
+                  <option>Two roofs</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-auto form-group pr-0 pl-1">
+                <label class="text-gray-dark font-weight-bold text-uppercase"
+                  >Rooms</label
+                >
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option value="0"></option>
+                  <option>One</option>
+                  <option>Two</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-auto form-group pr-0 pl-1">
+                <label class="text-gray-dark font-weight-bold text-uppercase"
+                  >Garage</label
+                >
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option value="0"></option>
+                  <option>One</option>
+                  <option>Two</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-auto form-group mt-auto pr-0 pl-1">
+                <button type="submit" class="btn btn-primary">Search</button>
+              </div>
+              <div class="col-12 col-md-auto form-group mt-auto pl-1">
+                <button type="submit" class="btn btn-warning text-white">
+                  <i class="fas fa-edit"></i> Clear filter
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-      <div class="col-12 col-md-6 my-2 my-md-5">
-        <div class="row mb-2">
-          <div class="col-12">
-            <i class="fas fa-map-marked-alt fa-2x"></i>
-          </div>
-        </div>
-        <div class="row mb-2">
-          <div class="col-12">
-            <h3 class="font-weight-bold">2- Locate:</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 p-square">
-            <p class="font-size-mid">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud".
-            </p>
-          </div>
+    </div>
+    <div class="sec-2-list my-5 py-5 mx-lg-5 px-lg-5">
+      <div class="row">
+        <div class="col-12 mb-5">
+          <p class="search-title text-center">
+            Search results found 7 schools(s).
+          </p>
         </div>
       </div>
-      <div class="col-12 col-md-6 my-2 my-md-5">
-        <div class="row mb-2">
-          <div class="col-12">
-            <i class="far fa-file-alt fa-3x"></i>
-          </div>
+      <div class="row">
+        <div
+          class="col-12 col-md-6 col-lg-4 house-option text-center mt-5 px-3"
+          onclick="seeHouse();"
+        >
+          <img src="assets/img/house.jpg" class="house-found-img" alt="house" />
+          <p
+            class="house-found-p position-absolute text-white font-weight-bold"
+          >
+            Name: <span class="font-weight-bold">Demothree</span>
+          </p>
         </div>
-        <div class="row mb-2">
-          <div class="col-12">
-            <h3 class="font-weight-bold">3- Apply:</h3>
-          </div>
+        <div
+          class="col-12 col-md-6 col-lg-4 house-option text-center mt-5 px-3"
+          onclick="seeHouse();"
+        >
+          <img src="assets/img/house.jpg" class="house-found-img" alt="house" />
+          <p
+            class="house-found-p position-absolute text-white font-weight-bold"
+          >
+            Name: <span class="font-weight-bold">Demothree</span>
+          </p>
         </div>
-        <div class="row">
-          <div class="col-12 p-square">
-            <p class="font-size-mid">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud".
-            </p>
-          </div>
+        <div
+          class="col-12 col-md-6 col-lg-4 house-option text-center mt-5 px-3"
+          onclick="seeHouse();"
+        >
+          <img src="assets/img/house.jpg" class="house-found-img" alt="house" />
+          <p
+            class="house-found-p position-absolute text-white font-weight-bold"
+          >
+            Name: <span class="font-weight-bold">Demothree</span>
+          </p>
+        </div>
+        <div
+          class="col-12 col-md-6 col-lg-4 house-option text-center mt-5 px-3"
+          onclick="seeHouse();"
+        >
+          <img src="assets/img/house.jpg" class="house-found-img" alt="house" />
+          <p
+            class="house-found-p position-absolute text-white font-weight-bold"
+          >
+            Name: <span class="font-weight-bold">Demothree</span>
+          </p>
         </div>
       </div>
-      <div class="col-12 col-md-6 my-2 my-md-5">
-        <div class="row mb-2">
-          <div class="col-12">
-            <i class="fas fa-umbrella-beach fa-2x"></i>
-          </div>
-        </div>
-        <div class="row mb-2">
-          <div class="col-12">
-            <h3 class="font-weight-bold">4- Enjoy:</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 p-square">
-            <p class="font-size-mid">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud".
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+
     <footer>
       <div class="row bg-black justify-content-center">
         <div class="col-12 text-center py-4">

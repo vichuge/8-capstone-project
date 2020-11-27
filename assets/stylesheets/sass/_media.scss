@@ -14,9 +14,12 @@
       font-size: 20px;
   }
 
-  
 }
 
 /* tablet: up to 1024px (computers) */
 @media (min-width: 1024px) {
+    .sec-2-list {
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+      }
 }
