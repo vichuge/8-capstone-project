@@ -1,10 +1,22 @@
 /* mobile: up to 768px (tablets) */
 @media (min-width: 768px) {
-    
+  .col-main-form {
+    padding-left: 20% !important;
+    padding-right: 20% !important;
+  }
+
+  .main-form {
+      padding-left: 5% !important;
+      padding-right: 5% !important;
+  }
+
+  .title-form {
+      font-size: 20px;
+  }
+
+  
 }
 
 /* tablet: up to 1024px (computers) */
 @media (min-width: 1024px) {
-
 }
-

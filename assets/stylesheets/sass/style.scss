@@ -1,15 +1,20 @@
 @import "variables";
-@import "media";
 @import "framework";
+@import "media";
 
 body {
   font-family: $noto-sans;
   nav {
+
     a {
       color: $white;
-      font-size: 18px;
+      font-size: 22px;
       &:hover {
         color: $white;
+      }
+
+      .nav-span {
+        font-size: 15px;
       }
     }
 
@@ -25,4 +30,13 @@ body {
         background-color: rgba(255,255,255,0.9);
     }
   }
+}
+
+.p-square {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.btn-footer {
+  background-color: $gray-middle;
 }

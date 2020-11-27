@@ -1,7 +1,5 @@
 /* Colors */
 /* Fonts */
-/* mobile: up to 768px (tablets) */
-/* tablet: up to 1024px (computers) */
 .no, .row {
   padding-right: 0 !important;
   padding-left: 0 !important;
@@ -11,25 +9,70 @@
 .bg-magenta {
   background-color: #d35649; }
 
+.text-magenta {
+  color: #d35649; }
+  .text-magenta:hover {
+    color: #d35649; }
+
+.text-gray-light {
+  color: #98a4a5; }
+  .text-gray-light:hover {
+    color: #98a4a5; }
+
+.text-f2 {
+  font-size: 13px;
+  text-align: center; }
+
+.bg-black {
+  background-color: black; }
+
+.bg-gray-dark {
+  background-color: #1f1f1f; }
+
 .font-size-mid {
   font-size: 14px; }
 
 h2 {
-  font-size: 15px;
+  font-size: 20px;
   color: #d35649; }
 
+h3 {
+  font-size: 16px; }
+
+/* mobile: up to 768px (tablets) */
+@media (min-width: 768px) {
+  .col-main-form {
+    padding-left: 20% !important;
+    padding-right: 20% !important; }
+
+  .main-form {
+    padding-left: 5% !important;
+    padding-right: 5% !important; }
+
+  .title-form {
+    font-size: 20px; } }
+/* tablet: up to 1024px (computers) */
 body {
   font-family: "Noto Sans", sans-serif; }
   body nav a {
     color: white;
-    font-size: 18px; }
+    font-size: 22px; }
     body nav a:hover {
       color: white; }
+    body nav a .nav-span {
+      font-size: 15px; }
   body nav ul {
     list-style-type: none; }
   body .sec-1 {
     background-image: url("../../img/bg-page.jpg"); }
     body .sec-1 .main-form {
       background-color: rgba(255, 255, 255, 0.9); }
+
+.p-square {
+  padding-left: 20%;
+  padding-right: 20%; }
+
+.btn-footer {
+  background-color: #444; }
 
 /*# sourceMappingURL=style.css.map */
