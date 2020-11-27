@@ -9,11 +9,42 @@
     background-color: $magenta;
 }
 
+.text-magenta {
+    color: $magenta;
+    &:hover {
+        color: $magenta;
+    }
+}
+
+.text-gray-light {
+    color: $gray-light;
+    &:hover {
+        color: $gray-light;
+    }
+}
+
+.text-f2 {
+    font-size: 13px;
+    text-align: center;
+}
+
+.bg-black {
+    background-color: $dark;
+}
+
+.bg-gray-dark {
+    background-color: $gray-dark;
+}
+
 .font-size-mid {
     font-size: 14px;
 }
 
 h2 {
-    font-size: 15px;
+    font-size: 20px;
     color: $magenta;
+}
+
+h3 {
+    font-size: 16px;
 }

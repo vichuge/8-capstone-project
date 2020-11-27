@@ -1,3 +1,5 @@
+sass --watch assets/stylesheets/sass:assets/stylesheets/css
+
 Parts or the page---------------
     Main page--
         nav bar
@@ -58,3 +60,10 @@ Icons---------------------------------
 <i class="fas fa-couch"></i>
 <i class="fas fa-umbrella-beach"></i>
 <i class="fas fa-home"></i>
+
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-google-plus-g"></i>
+<i class="fab fa-snapchat-ghost"></i>
+
