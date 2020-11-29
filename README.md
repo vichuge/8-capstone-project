@@ -2,7 +2,7 @@
 
 # 8 Capstone Project
 
-> For this project you're going to be building a responsive site for a client who is going to provide you with a design guideline for their brand. The characteristics of the site will depend on what client you get.
+> The project I'm going to build for the HTML & CSS Capstone Project is based on an online directory of schools. I just follow the given design of the website, but I personalise the content, instead of a directory of schools I built a real state agency web site.
 
 ![screenshot](./assets/img/screenshot.png)
 
