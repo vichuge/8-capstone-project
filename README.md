@@ -5,6 +5,8 @@
 > The project I'm going to build for the HTML & CSS Capstone Project is based on an online directory of schools. I just follow the given design of the website, but I personalise the content, instead of a directory of schools I built a real state agency web site.
 
 ![screenshot](./assets/img/screenshot.png)
+![screenshot2](./assets/img/screenshot2.png)
+![screenshot3](./assets/img/screenshot3.png)
 
 ## Built With
 
