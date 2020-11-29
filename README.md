@@ -43,3 +43,4 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [Creative Commons Legal Code](https://github.com/vichuge/8-capstone-project/blob/main/LICENSE) licensed.
+Artistic attribution for [Mathew Njuguna](https://www.behance.net/mathewnjuguna) and [Sam Achola](https://www.behance.net/aweSam)
