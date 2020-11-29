@@ -1,0 +1,116 @@
+/*
+font-family: 'Castoro', serif;
+font-family: 'Noto Sans', sans-serif;
+*/
+@import "variables";
+@import "framework";
+@import "media";
+
+body {
+  font-family: $noto-sans;
+
+  nav {
+    a {
+      color: $white;
+      font-size: 22px;
+
+      &:hover {
+        color: $white;
+      }
+
+      .nav-span {
+        font-size: 15px;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+    }
+  }
+
+  .sec-1-index {
+    background-image: url("../../img/bg-page.jpg");
+
+    .main-form {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  .sec-1-list {
+    background-color: $gray-lighter;
+  }
+}
+
+.p-square {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.btn-footer {
+  background-color: $gray-middle;
+}
+
+.filter-by {
+  font-size: 20px;
+}
+
+.search-title {
+  font-size: 25px;
+}
+
+.house-found-img {
+  max-width: 25em;
+  width: 100%;
+  height: auto;
+  filter: brightness(0.4);
+}
+
+.house-found-p {
+  font-size: 20px;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
+.house-option {
+  cursor: pointer;
+}
+
+.title-house {
+  font-size: 30px;
+}
+
+.click-here {
+  font-size: 30px;
+  letter-spacing: 6px;
+  color: black;
+}
+
+.map-directions {
+  font-size: 30px;
+}
+
+.map-container {
+  position: relative;
+}
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.color-img {
+  max-width: 13em;
+  height: auto;
+}
+
+.h3-color {
+  font-size: 23px;
+}
+
+.p-color {
+  font-size: 15px;
+}

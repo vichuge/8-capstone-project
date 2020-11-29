@@ -1,0 +1,91 @@
+.no,
+.row {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.bg-magenta {
+  background-color: $magenta;
+}
+
+.bg-gray-light {
+  background-color: #f5f5f5;
+}
+
+.bg-gray-light2 {
+  background-color: $gray-light;
+}
+
+.bg-black {
+  background-color: $dark;
+}
+
+.bg-gray-dark {
+  background-color: $gray-dark;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.text-magenta {
+  color: $magenta;
+
+  &:hover {
+    color: $magenta;
+  }
+}
+
+.text-blue {
+  color: $blue;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.text-gray-light {
+  color: $gray-light;
+
+  &:hover {
+    color: $gray-light;
+  }
+}
+
+.text-gray-dark {
+  color: $gray-dark;
+
+  &:hover {
+    color: $gray-dark;
+  }
+}
+
+.text-f2 {
+  font-size: 13px;
+  text-align: center;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+.font-size-mid {
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 20px;
+  color: $magenta;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: $blue;
+}
+
+.btn-warning {
+  background-color: $yellow;
+}

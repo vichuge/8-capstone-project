@@ -1,0 +1,171 @@
+/*
+font-family: 'Castoro', serif;
+font-family: 'Noto Sans', sans-serif;
+*/
+/* Colors */
+/* Fonts */
+.no,
+.row {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important; }
+
+.bg-magenta {
+  background-color: #d35649; }
+
+.bg-gray-light {
+  background-color: #f5f5f5; }
+
+.bg-gray-light2 {
+  background-color: #98a4a5; }
+
+.bg-black {
+  background-color: black; }
+
+.bg-gray-dark {
+  background-color: #1f1f1f; }
+
+.bg-blue {
+  background-color: #509bd7; }
+
+.text-magenta {
+  color: #d35649; }
+  .text-magenta:hover {
+    color: #d35649; }
+
+.text-blue {
+  color: #509bd7; }
+  .text-blue:hover {
+    color: #509bd7; }
+
+.text-gray-light {
+  color: #98a4a5; }
+  .text-gray-light:hover {
+    color: #98a4a5; }
+
+.text-gray-dark {
+  color: #1f1f1f; }
+  .text-gray-dark:hover {
+    color: #1f1f1f; }
+
+.text-f2 {
+  font-size: 13px;
+  text-align: center;
+  padding-right: 20%;
+  padding-left: 20%; }
+
+.font-size-mid {
+  font-size: 14px; }
+
+h2 {
+  font-size: 20px;
+  color: #d35649; }
+
+h3 {
+  font-size: 16px; }
+
+.btn-primary {
+  background-color: #509bd7; }
+
+.btn-warning {
+  background-color: #e6ac5b; }
+
+/* mobile: up to 768px (tablets) */
+@media (min-width: 768px) {
+  .col-main-form {
+    padding-left: 20% !important;
+    padding-right: 20% !important; }
+
+  .main-form {
+    padding-left: 5% !important;
+    padding-right: 5% !important; }
+
+  .title-form {
+    font-size: 20px; }
+
+  .color-column1 {
+    align-items: flex-start !important; } }
+/* tablet: up to 1024px (computers) */
+@media (min-width: 1024px) {
+  .sec-2-list {
+    padding-left: 10% !important;
+    padding-right: 10% !important; } }
+body {
+  font-family: "Noto Sans", sans-serif; }
+  body nav a {
+    color: white;
+    font-size: 22px; }
+    body nav a:hover {
+      color: white; }
+    body nav a .nav-span {
+      font-size: 15px; }
+  body nav ul {
+    list-style-type: none; }
+  body .sec-1-index {
+    background-image: url("../../img/bg-page.jpg"); }
+    body .sec-1-index .main-form {
+      background-color: rgba(255, 255, 255, 0.9); }
+  body .sec-1-list {
+    background-color: #eee; }
+
+.p-square {
+  padding-left: 20%;
+  padding-right: 20%; }
+
+.btn-footer {
+  background-color: #444; }
+
+.filter-by {
+  font-size: 20px; }
+
+.search-title {
+  font-size: 25px; }
+
+.house-found-img {
+  max-width: 25em;
+  width: 100%;
+  height: auto;
+  filter: brightness(0.4); }
+
+.house-found-p {
+  font-size: 20px;
+  top: 50%;
+  left: 0;
+  right: 0; }
+
+.house-option {
+  cursor: pointer; }
+
+.title-house {
+  font-size: 30px; }
+
+.click-here {
+  font-size: 30px;
+  letter-spacing: 6px;
+  color: black; }
+
+.map-directions {
+  font-size: 30px; }
+
+.map-container {
+  position: relative; }
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+.color-img {
+  max-width: 13em;
+  height: auto; }
+
+.h3-color {
+  font-size: 23px; }
+
+.p-color {
+  font-size: 15px; }
+
+/*# sourceMappingURL=style.css.map */
