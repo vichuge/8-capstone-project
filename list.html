@@ -6,6 +6,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <meta
+      name="description"
+      content="Browse and filter the houses available at Home sweet home."
+    />
 
     <link
       rel="stylesheet"
@@ -14,23 +18,32 @@
       crossorigin="anonymous"
     />
 
-    <title>Home sweet home</title>
+    <title>Houses | Home sweet home</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Castoro&family=Noto+Sans&display=swap"
       rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <link rel="stylesheet" href="assets/stylesheets/css/style.css" />
   </head>
 
   <body class="bg-white container-fluid no">
-    <main>
+    <header>
       <nav class="text-white row bg-magenta" id="navbar">
         <div class="col-12 col-lg-6 py-4 mt-lg-0 text-center text-lg-left">
           <a href="index.html" class="text-decoration-none logo-text">
-            <i class="fas fa-home"></i>Home sweet home
+            <i class="fas fa-home" aria-hidden="true"></i>Home sweet home
           </a>
         </div>
         <div class="col-12 col-lg-6 mb-4 mb-lg-0 my-lg-auto">
@@ -41,7 +54,8 @@
               <a
                 href="list.html"
                 class="d-flex justify-content-center text-decoration-none align-items-center"
-                ><i class="fas fa-search mr-2"></i
+                aria-label="Houses"
+                ><i class="fas fa-search mr-2" aria-hidden="true"></i
                 ><span class="d-none d-lg-block text-uppercase nav-span"
                   >Houses</span
                 ></a
@@ -51,7 +65,8 @@
               <a
                 href="#"
                 class="d-flex justify-content-center text-decoration-none align-items-center"
-                ><i class="fas fa-user mr-2"></i
+                aria-label="About"
+                ><i class="fas fa-user mr-2" aria-hidden="true"></i
                 ><span class="d-none d-lg-block text-uppercase nav-span"
                   >About</span
                 ></a
@@ -61,7 +76,8 @@
               <a
                 href="#"
                 class="d-flex justify-content-center text-decoration-none align-items-center"
-                ><i class="fas fa-wifi mr-2"></i
+                aria-label="Blog"
+                ><i class="fas fa-wifi mr-2" aria-hidden="true"></i
                 ><span class="d-none d-lg-block text-uppercase nav-span"
                   >Blog</span
                 ></a
@@ -71,7 +87,8 @@
               <a
                 href="#"
                 class="d-flex justify-content-center text-decoration-none align-items-center"
-                ><i class="fas fa-bars mr-2"></i
+                aria-label="More"
+                ><i class="fas fa-bars mr-2" aria-hidden="true"></i
                 ><span class="d-none d-lg-block text-uppercase nav-span"
                   >More...</span
                 ></a
@@ -80,170 +97,192 @@
           </ul>
         </div>
       </nav>
-    </main>
-    <div class="row sec-1-list no mt-5 py-5">
-      <div class="col-12">
-        <div class="row">
-          <div class="col-12 font-weight-bold text-gray-light">
-            <h1 class="text-center filter-by font-weight-bold">Filter by:</h1>
+    </header>
+    <main>
+      <div class="row sec-1-list no mt-5 py-5">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 font-weight-bold text-gray-light">
+              <h1 class="text-center filter-by font-weight-bold">Filter by:</h1>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <form action="#">
+              <div class="row">
+                <div class="col-12 col-md-auto form-group pr-0 pl-1">
+                  <label
+                    for="colony"
+                    class="text-gray-dark font-weight-bold text-uppercase"
+                    >Colony:*</label
+                  >
+                  <input
+                    type="text"
+                    id="colony"
+                    name="colony"
+                    class="form-control"
+                  />
+                </div>
+                <div class="col-12 col-md-auto form-group pr-0 pl-1">
+                  <label
+                    for="state"
+                    class="text-gray-dark font-weight-bold text-uppercase"
+                    >State</label
+                  >
+                  <select id="state" name="state" class="form-control">
+                    <option value="">Select an option...</option>
+                    <option>Yucatán</option>
+                    <option>Quintana Roo</option>
+                    <option>Veracruz</option>
+                    <option>Jalisco</option>
+                    <option>Nuevo León</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-auto form-group pr-0 pl-1">
+                  <label
+                    for="city"
+                    class="text-gray-dark font-weight-bold text-uppercase"
+                    >City</label
+                  >
+                  <select id="city" name="city" class="form-control">
+                    <option value="">Select an option...</option>
+                    <option>Mérida</option>
+                    <option>Cancún</option>
+                    <option>Veracruz</option>
+                    <option>Guadalajara</option>
+                    <option>Monterrey</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-auto form-group pr-0 pl-1">
+                  <label
+                    for="type"
+                    class="text-gray-dark font-weight-bold text-uppercase"
+                    >Type</label
+                  >
+                  <select id="type" name="type" class="form-control">
+                    <option value="">Select an option...</option>
+                    <option>One roof</option>
+                    <option>Two roofs</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-auto form-group pr-0 pl-1">
+                  <label
+                    for="rooms"
+                    class="text-gray-dark font-weight-bold text-uppercase"
+                    >Rooms</label
+                  >
+                  <select id="rooms" name="rooms" class="form-control">
+                    <option value="">Select an option...</option>
+                    <option>One</option>
+                    <option>Two</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-auto form-group pr-0 pl-1">
+                  <label
+                    for="garage"
+                    class="text-gray-dark font-weight-bold text-uppercase"
+                    >Garage</label
+                  >
+                  <select id="garage" name="garage" class="form-control">
+                    <option value="">Select an option...</option>
+                    <option>One</option>
+                    <option>Two</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-auto form-group mt-auto pr-0 pl-1">
+                  <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+                <div class="col-12 col-md-auto form-group mt-auto pl-1">
+                  <button type="reset" class="btn btn-warning text-white">
+                    <i class="fas fa-edit" aria-hidden="true"></i> Clear filter
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <form action="#">
-            <div class="row">
-              <div class="col-12 col-md-auto form-group pr-0 pl-1">
-                <label class="text-gray-dark font-weight-bold text-uppercase"
-                  >Colony:*</label
-                >
-                <input type="text" class="form-control" placeholder="" />
-              </div>
-              <div class="col-12 col-md-auto form-group pr-0 pl-1">
-                <label class="text-gray-dark font-weight-bold text-uppercase"
-                  >State</label
-                >
-                <select class="form-control">
-                  <option value="0">Select an option...</option>
-                  <option>Yucatán</option>
-                  <option>Quintana Roo</option>
-                  <option>Veracruz</option>
-                  <option>Guadalajara</option>
-                  <option>Monterrey</option>
-                </select>
-              </div>
-              <div class="col-12 col-md-auto form-group pr-0 pl-1">
-                <label class="text-gray-dark font-weight-bold text-uppercase"
-                  >City</label
-                >
-                <select class="form-control">
-                  <option value="0">Select an option...</option>
-                  <option>Cancun</option>
-                  <option>Jaliso</option>
-                </select>
-              </div>
-              <div class="col-12 col-md-auto form-group pr-0 pl-1">
-                <label class="text-gray-dark font-weight-bold text-uppercase"
-                  >Type</label
-                >
-                <select class="form-control">
-                  <option value="0">Select an option...</option>
-                  <option>One roof</option>
-                  <option>Two roofs</option>
-                </select>
-              </div>
-              <div class="col-12 col-md-auto form-group pr-0 pl-1">
-                <label class="text-gray-dark font-weight-bold text-uppercase"
-                  >Rooms</label
-                >
-                <select class="form-control">
-                  <option value="0">Select an option...</option>
-                  <option>One</option>
-                  <option>Two</option>
-                </select>
-              </div>
-              <div class="col-12 col-md-auto form-group pr-0 pl-1">
-                <label class="text-gray-dark font-weight-bold text-uppercase"
-                  >Garage</label
-                >
-                <select class="form-control">
-                  <option value="0">Select an option...</option>
-                  <option>One</option>
-                  <option>Two</option>
-                </select>
-              </div>
-              <div class="col-12 col-md-auto form-group mt-auto pr-0 pl-1">
-                <button type="submit" class="btn btn-primary">Search</button>
-              </div>
-              <div class="col-12 col-md-auto form-group mt-auto pl-1">
-                <button type="submit" class="btn btn-warning text-white">
-                  <i class="fas fa-edit"></i> Clear filter
-                </button>
-              </div>
-            </div>
-          </form>
+      </div>
+      <div class="sec-2-list my-5 py-5 mx-lg-5 px-lg-5">
+        <div class="row">
+          <div class="col-12 mb-5">
+            <h2 class="search-title text-center font-weight-normal">
+              Search results found 4 house(s).
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-12 col-md-6 col-lg-4 house-option text-center mt-5 px-3"
+          >
+            <a href="house.html">
+              <img
+                src="assets/img/house.jpg"
+                class="house-found-img"
+                alt="Demothree house"
+              />
+              <p
+                class="house-found-p position-absolute text-white font-weight-bold"
+              >
+                Name: <span class="font-weight-bold">Demothree</span>
+              </p>
+            </a>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-4 house-option text-center mt-5 px-3"
+          >
+            <a href="house.html">
+              <img
+                src="assets/img/house.jpg"
+                class="house-found-img"
+                alt="Demothree house"
+              />
+              <p
+                class="house-found-p position-absolute text-white font-weight-bold"
+              >
+                Name: <span class="font-weight-bold">Demothree</span>
+              </p>
+            </a>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-4 house-option text-center mt-5 px-3"
+          >
+            <a href="house.html">
+              <img
+                src="assets/img/house.jpg"
+                class="house-found-img"
+                alt="Demothree house"
+              />
+              <p
+                class="house-found-p position-absolute text-white font-weight-bold"
+              >
+                Name: <span class="font-weight-bold">Demothree</span>
+              </p>
+            </a>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-4 house-option text-center mt-5 px-3"
+          >
+            <a href="house.html">
+              <img
+                src="assets/img/house.jpg"
+                class="house-found-img"
+                alt="Demothree house"
+              />
+              <p
+                class="house-found-p position-absolute text-white font-weight-bold"
+              >
+                Name: <span class="font-weight-bold">Demothree</span>
+              </p>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="sec-2-list my-5 py-5 mx-lg-5 px-lg-5">
-      <div class="row">
-        <div class="col-12 mb-5">
-          <p class="search-title text-center">
-            Search results found 7 schools(s).
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div
-          class="col-12 col-md-6 col-lg-4 house-option text-center mt-5 px-3"
-        >
-          <a href="house.html">
-            <img
-              src="assets/img/house.jpg"
-              class="house-found-img"
-              alt="house"
-            />
-            <p
-              class="house-found-p position-absolute text-white font-weight-bold"
-            >
-              Name: <span class="font-weight-bold">Demothree</span>
-            </p>
-          </a>
-        </div>
-        <div
-          class="col-12 col-md-6 col-lg-4 house-option text-center mt-5 px-3"
-        >
-          <a href="house.html">
-            <img
-              src="assets/img/house.jpg"
-              class="house-found-img"
-              alt="house"
-            />
-            <p
-              class="house-found-p position-absolute text-white font-weight-bold"
-            >
-              Name: <span class="font-weight-bold">Demothree</span>
-            </p>
-          </a>
-        </div>
-        <div
-          class="col-12 col-md-6 col-lg-4 house-option text-center mt-5 px-3"
-        >
-          <a href="house.html">
-            <img
-              src="assets/img/house.jpg"
-              class="house-found-img"
-              alt="house"
-            />
-            <p
-              class="house-found-p position-absolute text-white font-weight-bold"
-            >
-              Name: <span class="font-weight-bold">Demothree</span>
-            </p>
-          </a>
-        </div>
-        <div
-          class="col-12 col-md-6 col-lg-4 house-option text-center mt-5 px-3"
-        >
-          <a href="house.html">
-            <img
-              src="assets/img/house.jpg"
-              class="house-found-img"
-              alt="house"
-            />
-            <p
-              class="house-found-p position-absolute text-white font-weight-bold"
-            >
-              Name: <span class="font-weight-bold">Demothree</span>
-            </p>
-          </a>
-        </div>
-      </div>
-    </div>
+    </main>
 
     <footer>
       <div class="row bg-black justify-content-center">
         <div class="col-12 text-center py-4">
           <a href="index.html" class="text-decoration-none text-white"
-            ><i class="fas fa-home"></i>Home sweet home</a
+            ><i class="fas fa-home" aria-hidden="true"></i>Home sweet home</a
           >
         </div>
         <div class="col-12 col-sm-6 col-md-auto text-center py-3">
@@ -251,37 +290,37 @@
         </div>
         <div class="col-12 col-sm-6 col-md-auto text-center py-3">
           <a href="#" class="text-decoration-none text-white"
-            ><i class="fas fa-user"></i> About</a
+            ><i class="fas fa-user" aria-hidden="true"></i> About</a
           >
         </div>
         <div class="col-12 col-sm-6 col-md-auto text-center py-3">
           <a href="list.html" class="text-decoration-none text-white"
-            ><i class="fas fa-search"></i> Search</a
+            ><i class="fas fa-search" aria-hidden="true"></i> Search</a
           >
         </div>
         <div class="col-12 col-sm-6 col-md-auto text-center py-3">
           <a href="#" class="text-decoration-none text-white"
-            ><i class="fab fa-facebook-f"></i> Facebook</a
+            ><i class="fab fa-facebook-f" aria-hidden="true"></i> Facebook</a
           >
         </div>
         <div class="col-12 col-sm-6 col-md-auto text-center py-3">
           <a href="#" class="text-decoration-none text-white"
-            ><i class="fab fa-twitter"></i> Twitter</a
+            ><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a
           >
         </div>
         <div class="col-12 col-sm-6 col-md-auto text-center py-3">
           <a href="#" class="text-decoration-none text-white"
-            ><i class="fab fa-instagram"></i> Instagram</a
+            ><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a
           >
         </div>
         <div class="col-12 col-sm-6 col-md-auto text-center py-3">
           <a href="#" class="text-decoration-none text-white"
-            ><i class="fab fa-google-plus-g"></i> Google+</a
+            ><i class="fab fa-google-plus-g" aria-hidden="true"></i> Google+</a
           >
         </div>
         <div class="col-12 col-sm-6 col-md-auto text-center py-3">
           <a href="#" class="text-decoration-none text-white"
-            ><i class="fab fa-snapchat-ghost"></i> Snapchat</a
+            ><i class="fab fa-snapchat-ghost" aria-hidden="true"></i> Snapchat</a
           >
         </div>
       </div>
@@ -298,7 +337,9 @@
             <div class="col-auto pr-0 d-flex align-items-center">
               <input
                 class="form input-lg bg-black border text-white"
-                type="text"
+                type="email"
+                placeholder="Your email"
+                aria-label="Email to subscribe"
               />
             </div>
             <div class="col-4 pl-0">
@@ -353,45 +394,46 @@
       </div>
       <div class="row bg-gray-dark text-gray-light pb-lg-2">
         <div class="col-4 d-none d-lg-block mb-1">
-          <a class="text-decoration-none text-gray-light" href="#"
-            ><i class="fab fa-facebook-f fa-lg pr-2 pt-3"></i
+          <a
+            class="text-decoration-none text-gray-light"
+            href="#"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f fa-lg pr-2 pt-3" aria-hidden="true"></i
           ></a>
-          <a class="text-decoration-none text-gray-light" href="#"
-            ><i class="fab fa-twitter fa-lg pr-2 pt-3"></i
+          <a
+            class="text-decoration-none text-gray-light"
+            href="#"
+            aria-label="Twitter"
+            ><i class="fab fa-twitter fa-lg pr-2 pt-3" aria-hidden="true"></i
           ></a>
-          <a class="text-decoration-none text-gray-light" href="#"
-            ><i class="fab fa-instagram fa-lg pr-2 pt-3"></i
+          <a
+            class="text-decoration-none text-gray-light"
+            href="#"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram fa-lg pr-2 pt-3" aria-hidden="true"></i
           ></a>
-          <a class="text-decoration-none text-gray-light" href="#"
-            ><i class="fab fa-google-plus-g fa-lg pr-2 pt-3"></i
+          <a
+            class="text-decoration-none text-gray-light"
+            href="#"
+            aria-label="Google+"
+            ><i class="fab fa-google-plus-g fa-lg pr-2 pt-3" aria-hidden="true"></i
           ></a>
-          <a class="text-decoration-none text-gray-light" href="#"
-            ><i class="fab fa-snapchat-ghost fa-lg pr-2 pt-3"></i
+          <a
+            class="text-decoration-none text-gray-light"
+            href="#"
+            aria-label="Snapchat"
+            ><i class="fab fa-snapchat-ghost fa-lg pr-2 pt-3" aria-hidden="true"></i
           ></a>
         </div>
         <div class="col-8 d-none d-lg-block my-auto">
           <p class="mb-0 text-right">
             Lorem ipsum dolor sit by
             <a href="index.html" class="text-decoration-none text-gray-light">
-              <i class="fas fa-home"></i>Home sweet home</a
+              <i class="fas fa-home" aria-hidden="true"></i>Home sweet home</a
             >. Thanks for all.
           </p>
         </div>
       </div>
     </footer>
-
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="assets/js/script.js"></script>
   </body>
 </html>

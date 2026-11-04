@@ -1,7 +1,3 @@
-/*
-font-family: 'Castoro', serif;
-font-family: 'Noto Sans', sans-serif;
-*/
 @import "variables";
 @import "framework";
 @import "media";
@@ -56,6 +52,7 @@ body {
 
 .search-title {
   font-size: 25px;
+  color: inherit;
 }
 
 .house-found-img {
@@ -92,6 +89,7 @@ body {
 
 .map-container {
   position: relative;
+  height: 500px;
 }
 
 .map-container iframe {
@@ -100,6 +98,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
+  border: 0;
 }
 
 .color-img {
