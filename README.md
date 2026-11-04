@@ -12,18 +12,37 @@
 
 - HTML 5
 - CSS 3
-- Bootstrap
-- Sass
+- Bootstrap 4.5
+- Sass (SCSS)
+- Font Awesome 5
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/vichuge/8-capstone-project/feature/index.html)
-
+[Live Demo Link](https://vichuge.github.io/8-capstone-project/)
 
 ## Getting Started
 
 - Clone or download this project on your computer
-- Open it with your favorite browser
+- Open `index.html` with your favorite browser
+
+### Editing styles
+
+Styles are written in SCSS (`assets/stylesheets/sass/`) and compiled to `assets/stylesheets/css/style.css`:
+
+```bash
+npx sass --no-source-map --style=expanded assets/stylesheets/sass/style.scss assets/stylesheets/css/style.css
+npx stylelint "assets/stylesheets/css/style.css" --fix
+```
+
+### Linters
+
+The project uses [Stylelint](https://stylelint.io/) and [Webhint](https://webhint.io/) (Microverse configs in `.stylelintrc.json` and `.hintrc`). They run on GitHub Actions for every pull request. To run them locally:
+
+```bash
+npm install --no-save stylelint@13.3.x stylelint-scss@3.17.x stylelint-config-standard@20.0.x stylelint-csstree-validator@1.x hint@7.x
+npx stylelint "**/*.{css,scss}"
+npx hint --telemetry=off .
+```
 
 ## Author
 
