@@ -1,28 +1,52 @@
-/* mobile: up to 768px (tablets) */
-@media (min-width: 768px) {
-  .col-main-form {
-    padding-left: 20% !important;
-    padding-right: 20% !important;
+// Tablets and up
+@media (min-width: $md) {
+  .hero {
+    min-height: 460px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../img/bg-page.jpg");
   }
 
-  .main-form {
-    padding-left: 5% !important;
-    padding-right: 5% !important;
+  .hero-title {
+    font-size: 40px;
   }
 
-  .title-form {
-    font-size: 20px;
-  }
-
-  .color-column1 {
-    align-items: flex-start !important;
+  .map-container {
+    height: 450px;
   }
 }
 
-/* tablet: up to 1024px (computers) */
-@media (min-width: 1024px) {
-  .sec-2-list {
-    padding-left: 10% !important;
-    padding-right: 10% !important;
+// Computers and up
+@media (min-width: $lg) {
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+
+  .nav-list {
+    justify-content: flex-end;
+    padding: 0;
+
+    li {
+      margin-left: 1.5rem;
+    }
+  }
+
+  .nav-item-link {
+    flex-direction: row;
+    font-size: 15px;
+    padding: 0.5rem 0.75rem;
+
+    i {
+      font-size: 18px;
+      margin: 0 0.5rem 0 0;
+    }
+  }
+
+  .hero {
+    min-height: 540px;
+  }
+
+  .house-photo {
+    height: 560px;
   }
 }

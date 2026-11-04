@@ -8,6 +8,14 @@
 ![screenshot2](./assets/img/screenshot2.png)
 ![screenshot3](./assets/img/screenshot3.png)
 
+## Features
+
+- Responsive design for mobile, tablet and desktop
+- Home page with a search bar, featured houses and how it works
+- Houses list with filters and cards showing price, location, rooms, baths and garage
+- House detail page with photo, key facts, contact buttons and a map
+- Accessible (WCAG AA colors, labels, skip link) and validated with Stylelint, Webhint and Lighthouse
+
 ## Built With
 
 - HTML 5

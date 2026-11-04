@@ -1,14 +1,23 @@
-// Colors
-$magenta: #d35649;
+// Colors (all backgrounds with white text pass WCAG AA 4.5:1)
+$magenta: #b5443a;
 $yellow: #e6ac5b;
-$blue: #509bd7;
-$dark: black;
-$white: white;
+$blue: #2b6ea6;
+$dark: #000;
+$white: #fff;
 $gray-dark: #1f1f1f;
 $gray-middle: #444;
+$gray-row: #687475;
 $gray-light: #98a4a5;
 $gray-lighter: #eee;
+$gray-bg: #f5f5f5;
+$text: #212529;
+$muted: #5f6b6c;
 
 // Fonts
 $castoro: 'Castoro', serif;
 $noto-sans: 'Noto Sans', sans-serif;
+
+// Breakpoints (Bootstrap 4)
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
